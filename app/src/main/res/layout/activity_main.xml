@@ -42,6 +42,18 @@
         android:textSize="20sp"/>
 
     <TextView
+        tools:text="TextView"
+        style="@style/Header"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:id="@+id/weather"
+        android:layout_below="@+id/countryName"
+        android:layout_alignStart="@+id/temperature"
+        android:layout_marginStart="40dp" />
+
+    <TextView
         android:id="@+id/temperature"
         style="@style/TempValue"
         android:layout_width="wrap_content"
@@ -71,15 +83,4 @@
         android:layout_alignBaseline="@+id/pressure"
         android:layout_alignBottom="@+id/pressure"
         android:layout_alignStart="@+id/textView2" />
-
-    <TextView
-        tools:text="TextView"
-        style="@style/Header"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:id="@+id/weather"
-        android:layout_below="@+id/countryName"
-        android:layout_alignEnd="@+id/temperature" />
 </RelativeLayout>
